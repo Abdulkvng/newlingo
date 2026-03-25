@@ -1,0 +1,7 @@
+{
+  "name": "Lingo - AI Language Coach",
+  "description": "Improve your speaking fluency with Lingo, a minimalist AI-powered language coach. Get instant, detailed feedback on your pronunciation, grammar, and fluency.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
