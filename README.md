@@ -24,16 +24,16 @@ NewLingo is a native iOS app paired with an Express backend that helps you pract
 
 ```
 newlingo/
-├── ios/                        # 📱 Native SwiftUI app
-│   └── Lingo/Lingo/
-│       ├── Models/             # Data models
-│       ├── Services/           # API client + audio recorder
-│       ├── ViewModels/         # MVVM state management
-│       ├── Theme/              # Colors + reusable styles
-│       └── Views/
-│           ├── Screens/        # Onboarding, Prompt, Recording,
-│           │                   # Feedback, Dashboard, Profile
-│           └── Components/     # Radar chart, score cards,
+├── Lingo.xcodeproj             # 📱 Xcode project (root level)
+├── Lingo/                      # 📱 Native SwiftUI app
+│   ├── Models/                 # Data models
+│   ├── Services/               # API client + audio recorder
+│   ├── ViewModels/             # MVVM state management
+│   ├── Theme/                  # Colors + reusable styles
+│   └── Views/
+│       ├── Screens/            # Onboarding, Prompt, Recording,
+│       │                       # Feedback, Dashboard, Profile
+│       └── Components/         # Radar chart, score cards,
 │                               # trend chart, flow layout
 │
 └── backend/                    # ⚙️ Node.js + Express API
@@ -88,8 +88,8 @@ npm run dev
 
 ### iOS App
 
-1. Open `ios/Lingo/Lingo.xcodeproj` in Xcode
-2. Update the backend URL in `Services/APIService.swift`:
+1. Open `Lingo.xcodeproj` in Xcode
+2. Update the backend URL in `Lingo/Services/APIService.swift`:
    - Simulator: `http://localhost:3001/api`
    - Device: `http://YOUR_LOCAL_IP:3001/api`
 3. Build & run on simulator or device
